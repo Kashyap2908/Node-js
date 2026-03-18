@@ -1,0 +1,55 @@
+<!-- write code to perform the following class first add 3 buttons (Increase, decrease and stop)
+ increase font-> max size =200px
+ decrease font-> min size= 20px
+ default font size =50px
+ stop button to stop increasing or decreasing the font
+ interval=100 millisecond -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <button onclick="inc()">Increase</button>
+    <button onclick="dec()">Decrease</button>
+    <button onclick="stop()">Stop</button>
+    <p id="p1" style="font-size: 50px;">Hello, this is up/down paragraph.</p>
+    <script>
+        let idInc, idDec;
+        function inc(){
+            let p=document.getElementById("p1");
+            let size = parseInt(p.style.fontSize) || 50;
+            clearInterval(idInc);
+            idInc=setInterval(()=>{
+                if(size>=200){
+                    clearInterval(idInc);
+                }
+                else{
+                    size++;
+                    p.style.fontSize=size+"px";
+                }
+            }, 100)
+        }
+        function dec(){
+            let p=document.getElementById("p1");
+            let size = parseInt(p.style.fontSize) || 50;
+            clearInterval(idDec);
+            idDec=setInterval(()=>{
+                if(size<=20){
+                    clearInterval(idDec);
+                }
+                else{
+                    size--;
+                    p.style.fontSize=size+"px";
+                }
+            }, 100)
+        }
+        function stop(){
+            clearInterval(idInc);
+            clearInterval(idDec);
+        }
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,1 @@
+[{"name":"Rohit Sharma","number":45},{"name":"Sachin Tendulkar","number":10},{"name":"Virat Kohli","number":18},{"name":"Harbhajan Singh","number":8},{"name":"Hardik Pandya","number":33},{"name":"Suryakumar Yadav","number":63},{"name":"Shikhar Dhawan","number":25},{"name":"KL Rahul","number":1},{"name":"Jasprit Bumrah","number":93},{"name":"Tilak Varma","number":72}]

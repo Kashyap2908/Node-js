@@ -1,0 +1,3 @@
+[{"name":"square","side":5},{"name":"circle","diameter":10}]
+Parameter of square: 20
+Parameter of Circle: 31.41592653589793

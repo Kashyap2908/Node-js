@@ -1,0 +1,26 @@
+<!-- initialize two variables and increment them each time and 
+ display the addition of both the variable at interval of 1 second -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">0</p>
+    <p id="p2">0</p>
+    <p id="p3">0</p>
+    <script>
+        let a=0;
+        let b=0;
+        setInterval(()=>{
+            a++;
+            b++;
+            document.getElementById("p1").innerHTML=a;
+            document.getElementById("p2").innerHTML=b;
+            document.getElementById("p3").innerHTML=a+b;
+        }, 1000)
+    </script>
+</body>
+</html>

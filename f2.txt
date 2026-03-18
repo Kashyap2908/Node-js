@@ -1,0 +1,4 @@
+{"d":{"a":10,"b":20,"c":[30,10]}}
+Sum of a and b: 30
+Subtraction of second element of c and b: 10
+Multiplication of elements of c: 300
