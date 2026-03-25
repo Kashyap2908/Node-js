@@ -14,8 +14,8 @@ var fs=require('fs')
 var http=require('http')
 q=u.parse("https://www.google.com/exam.txt?c1=Hello&c2=FSD2 T1 Test&c3=Welcome to LJU #All The Best",true)
 process.noDeprecation=true
-fname=q.pathname.split('/')[3]
-data=q.query.c1+"\n"+q.query.c3+" "+q.query.c2+"\n"+q.hash.split('%20').join()
+fname=q.pathname.split('/')[1]
+data=q.query.c1+"<br>"+q.query.c3+" "+q.query.c2+"<br>"+q.hash.split('%20').join()
 fs.writeFileSync(fname,data)
 d=fs.readFileSync(fname,'utf-8')
 http.createServer(

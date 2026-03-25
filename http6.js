@@ -1,13 +1,11 @@
-// write a node js script to load a simple html file defined as static on node js web server print it's content as html content
-addr="http://localhost:6051/demo.html"
 var u=require('url')
 var fs=require('fs')
 var http=require('http')
-q=u.parse(addr,true)
 process.noDeprecation=true
 http.createServer(
     function(req,res){
-        data=fs.readFile("."+q.pathname,function(err,data){
+        fname="."+(req.url==="/"? "about.html":"req.url")
+        data=fs.readFile("."+fname,function(err,data){
             if(err){
                 res.writeHead(404,{"content-type":"text/plain"})
                 res.end("Page not found")
@@ -17,4 +15,4 @@ http.createServer(
             }
         })
     }
-).listen(6051)
+).listen(8005)
