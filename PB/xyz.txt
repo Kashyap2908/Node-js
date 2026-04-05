@@ -1,2 +1,3 @@
-division1: {"a":[2,2,2,2,2]}
-division2: {"a":[1,2,3,4,5]}
+division1: {"base":[2,2,2,2,2]}
+division2: {"pw":[1,2,3,4,5]}
+result :{"p":[2,4,8,16,32]}
