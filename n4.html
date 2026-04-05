@@ -22,6 +22,7 @@
             let p=document.getElementById("p1");
             let size = parseInt(p.style.fontSize) || 50;
             clearInterval(idInc);
+            clearInterval(idDec);
             idInc=setInterval(()=>{
                 if(size>=200){
                     clearInterval(idInc);
@@ -36,6 +37,7 @@
             let p=document.getElementById("p1");
             let size = parseInt(p.style.fontSize) || 50;
             clearInterval(idDec);
+            clearInterval(idInc);
             idDec=setInterval(()=>{
                 if(size<=20){
                     clearInterval(idDec);

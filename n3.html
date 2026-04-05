@@ -11,10 +11,12 @@
     <button onclick="fun()">Increase</button>
     <p id="p1" style="font-size: 15px;">Hello</p>
     <script>
+        let id
         function fun(){
             let p=document.getElementById("p1");
             let size=15;
-            let id=setInterval(()=>{
+            clearInterval(id)
+            id=setInterval(()=>{
                 if(size>=50){
                     clearInterval(id);
                 }
